@@ -18,7 +18,7 @@ gulp.task('bower', function() {
 });
 
 gulp.task('style', function() {
-	return gulp.src(config.sassPath + '/style.scss')
+	return sass(config.sassPath + '/style.scss')
 		.pipe(sass({
 		style: 'expanded',
 		loadPath: [
